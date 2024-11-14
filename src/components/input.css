@@ -1,0 +1,24 @@
+textarea,
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  @apply bg-gray-50 rounded-lg border border-input text-gray-900 block w-full p-2.5 font-normal text-sm placeholder-gray-600;
+}
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  @apply h-10;
+}
+input[type="email"] {
+  @apply bg-no-repeat pl-10;
+}
+input#code2FA,
+input[name="password"] {
+  @apply bg-no-repeat pl-10;
+}
+.floating-label label {
+  @apply text-gray-700 text-xs font-normal leading-4 absolute -top-[10px] left-3 px-2 bg-white;
+}
+.floating-label input {
+  @apply bg-white;
+}

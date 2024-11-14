@@ -1,0 +1,42 @@
+.btn {
+  @apply font-medium rounded-lg text-sm px-5 py-2.5 text-center h-12 flex items-center justify-center;
+}
+.btn-primary {
+  @apply text-white bg-primary-700 hover:bg-primary-900 focus:ring-4 focus:outline-none focus:ring-primary-300;
+}
+.btn-secondary {
+  @apply bg-gray-200;
+}
+.btn-circle {
+  @apply rounded-full;
+}
+.btn:disabled {
+  @apply opacity-[0.5];
+}
+.btn.loading {
+  @apply opacity-[0.5] text-[0] cursor-not-allowed;
+}
+.btn.loading::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  border: 2px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.text-link {
+  @apply font-thin text-xs;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,11 @@
+.pagination ul li a svg {
+  @apply fill-gray-700;
+}
+.pagination ul li a:hover svg {
+  @apply fill-white;
+}
+@media (max-width: 998px) {
+  .limiter {
+    @apply hidden;
+  }
+}

@@ -1,0 +1,20 @@
+.fieldset .field {
+  @apply relative;
+}
+.fieldset .field.email::before {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg width='19' height='12' viewBox='0 0 19 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.5 0C1.39543 0 0.5 0.895431 0.5 2V3.16147L8.94098 7.38197C9.29289 7.55792 9.70711 7.55792 10.059 7.38197L18.5 3.16147V2C18.5 0.895431 17.6046 0 16.5 0H2.5Z' fill='%236B7280'/%3E%3Cpath d='M18.5 4.83853L10.7298 8.72361C9.95564 9.11071 9.04436 9.11071 8.27016 8.72361L0.5 4.83853V10C0.5 11.1046 1.39543 12 2.5 12H16.5C17.6046 12 18.5 11.1046 18.5 10V4.83853Z' fill='%236B7280'/%3E%3C/svg%3E%0A");
+  @apply block w-5 h-5 absolute left-[10px] top-[10px] bg-center bg-no-repeat;
+}
+.fieldset .field.code2FA::before,
+.fieldset .field.password::before {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' viewBox='0 0 21 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.5 1.25C8.08375 1.25 6.125 3.20875 6.125 5.625V8.125C4.74429 8.125 3.625 9.24429 3.625 10.625V16.25C3.625 17.6307 4.74429 18.75 6.125 18.75H14.875C16.2557 18.75 17.375 17.6307 17.375 16.25V10.625C17.375 9.24429 16.2557 8.125 14.875 8.125V5.625C14.875 3.20875 12.9162 1.25 10.5 1.25ZM13.625 8.125V5.625C13.625 3.89911 12.2259 2.5 10.5 2.5C8.77411 2.5 7.375 3.89911 7.375 5.625V8.125H13.625Z' fill='%236B7280'/%3E%3C/svg%3E%0A");
+  @apply block w-5 h-5 absolute left-[10px] top-[10px] bg-center bg-no-repeat;
+}
+#form-country .row {
+  @apply relative pr-10;
+}
+#form-country .row .delete-row-container {
+  @apply absolute top-2 right-0;
+}
